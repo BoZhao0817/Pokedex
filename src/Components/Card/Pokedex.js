@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import Axios from 'axios';
 import pokemonTypes from "./pokemonTypes";
 import "./pokedex.css"
+import ProgressBar from "./ProgressBar";
 
 export default class Pokedex extends Component {
     state = {
@@ -150,53 +151,87 @@ export default class Pokedex extends Component {
     render() {
         return (
             <div className="Outer">
-                <div className="Card-detail">
-                    <div className="Pokemon-index">
-                        <h3>{this.state.pokemonIndex}</h3>
-                    </div>
-                    <div className="Card-header">
-                            {this.state.types.map(type => (
-                                <span key={type} className="badge" style={{backgroundColor:pokemonTypes[type]}}>
+                <div className="Content">
+                    <div className="Card-detail">
+                        <div className="Card-info">
+                            <div className="Pokemon-index">
+                                <h3>No.{this.state.pokemonIndex}</h3>
+                            </div>
+                            <div className="Card-info-upper">
+                                <div className="Pokemon-img">
+                                    <img className="card-img" src={this.state.imageUrl}/>
+                                </div>
+                                <div className="pokemon-type">
+                                    {this.state.types.map(type => (
+                                        <span key={type} className="badge" style={{backgroundColor:pokemonTypes[type]}}>
                                     {type.toLowerCase().split(' ').map(s => s.charAt(0).toUpperCase() + s.substring(1)).join(' ')}
                                 </span>
-                            ))}
-                    </div>
-                    <div className="Card-content">
-                        <img className="card-img" src={this.state.imageUrl}/>
-                        <div className="Card-content description name">
-                            <h4>{this.state.name.toLowerCase()}</h4>
-                            <div className="Progress-bar"></div>
+                                    ))}
+                                </div>
+                            </div>
+                            <div className="Card-content">
+                                <div className="Card-content description name">
+                                    <h2>{this.state.name.toLowerCase()}</h2>
+                                </div>
+                                <div className="Card-content description properties">
+                                    <h5>HP:{this.state.stats.hp}</h5>
+                                    <ProgressBar percentage = {this.state.stats.hp}/>
+                                </div>
+                                <div className="Card-content description properties">
+                                    <h5>Attack: {this.state.stats.attack}</h5>
+                                    <ProgressBar percentage = {this.state.stats.attack}/>
+                                </div>
+                                <div className="Card-content description properties">
+                                    <h5>Defense: {this.state.stats.defense}</h5>
+                                    <ProgressBar percentage = {this.state.stats.defense}/>
+                                </div>
+                                <div className="Card-content description properties">
+                                    <h5>Speed: {this.state.stats.speed}</h5>
+                                    <ProgressBar percentage = {this.state.stats.speed}/>
+                                </div>
+                                <div className="Card-content description properties">
+                                    <h5>Special Attack: {this.state.stats.specialAttack}</h5>
+                                    <ProgressBar percentage = {this.state.stats.specialAttack}/>
+                                </div>
+                                <div className="Card-content description properties">
+                                    <h5>Special Defense: {this.state.stats.specialDefense}</h5>
+                                    <ProgressBar percentage = {this.state.stats.specialDefense}/>
+                                </div>
+                                <div className="Card-content description detail">
+                                    <p className="pokemon-description-detail">{this.state.description}</p>
+                                </div>
+                            </div>
                         </div>
-                        <div className="Card-content description properties">
-                            <h5>HP</h5>
-                        </div>
-                        <div className="Card-content description properties">
-                            <h5>Attack</h5>
-                        </div>
-                        <div className="Card-content description properties">
-                            <h5>Defense</h5>
-                        </div>
-                        <div className="Card-content description properties">
-                            <h5>Speed</h5>
-                        </div>
-                        <div className="Card-content description properties">
-                            <h5>Special Attack</h5>
-                        </div>
-                        <div className="Card-content description properties">
-                            <h5>Special Defense</h5>
-                        </div>
-                        <div className="Card-content description detail">
-                            <p>{this.state.description}</p>
-                        </div>
-                    </div>
-                    <hr/>
-                <div className="Card-body">
-                        <div className="Card-title">
-                            <h2>Profile</h2>
-                        </div>
-                        <div className="Card-properties">
-                            <p>Height</p>
-                            <p>{this.state.height} ft.</p>
+                        <hr/>
+                        <hr/>
+                        <div className="Card-body">
+                            <div className="Card-body-content">
+                                <div className="Card-title">
+                                    <h2>Profile</h2>
+                                </div>
+                                <div className="Card-properties">
+                                    <p>Height: {this.state.height} ft</p>
+                                </div>
+                                <div className="Card-properties">
+                                    <p>Weight: {this.state.weight} lbs</p>
+                                </div>
+                                <div className="Card-properties">
+                                    <p>Egg group: {this.state.eggGroups} </p>
+                                </div>
+                                <div className="Card-properties">
+                                    <p>Hatch Step: {this.state.hatchSteps} </p>
+                                </div>
+                                <div className="Card-properties">
+                                    <p>Abilities: {this.state.abilities} </p>
+                                </div>
+                                <div className="Card-properties">
+                                    <p>EVs: {this.state.evs} </p>
+                                </div>
+                                <div className="Card-properties">
+                                    <p>Gender Ratio: {this.state.genderRatioFemale}f/{this.state.genderRatioMale}m</p>
+                                    {/*<ProgressBar percentage = {this.state.genderRatioFemale}/>*/}
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>

@@ -4,7 +4,30 @@
 
 .Card-detail{
     background-color: white;
-    opacity: .8;
+    opacity: 95%;
+}
+
+.Pokemon-img{
+
+}
+
+.Card-info{
+
+}
+
+.Card-info-upper{
+    text-align: center;
+}
+
+h2{
+    text-align: center;
+}
+
+.card-img{
+    height: 300px;
+    width: 300px;
+    opacity: 1;
+
 }
 
 .Card-header{
@@ -17,6 +40,7 @@
 .Pokemon-index{
     color: black;
     font-family: "Comic Sans MS";
+    padding-top: 2px;
 }
 
 /*span{*/
@@ -49,4 +73,37 @@
     width: 65%;
     height: 100%;
     margin: 20px auto ;
+}
+
+.pokemon-description-detail{
+    padding-top: 30px;
+    padding-bottom: 30px;
+
+}
+
+/*.Card-content description detail{*/
+/*    border: 1px solid black;*/
+/*}*/
+
+.Card-body-content{
+    height: 250px;
+    width: 250px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.Card-content{
+    margin: 0 auto;
+    width: 400px;
+    /*text-align: center;*/
+}
+
+hr{
+    border-top: 1px dashed #6bccf9;
+    opacity:1;
+}
+
+.Content{
+    margin-bottom: 0;
+    padding-bottom: 100px;
 }
