@@ -1,0 +1,52 @@
+*{
+    font-family: "Comic Sans MS";
+}
+
+.Card-detail{
+    background-color: white;
+    opacity: .8;
+}
+
+.Card-header{
+    display: grid;
+    margin: 0 auto;
+    grid-template-columns: auto auto;
+
+}
+
+.Pokemon-index{
+    color: black;
+    font-family: "Comic Sans MS";
+}
+
+/*span{*/
+/*    text-align: center;*/
+/*    margin: 0;*/
+/*}*/
+
+.badge{
+    color: white;
+    border-style: none;
+    padding: 5px 10px;
+    margin-right: 10px;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+.p{
+    margin: 0;
+    padding-right: 10px;
+}
+
+
+
+.Card-title{
+    text-align: center;
+}
+
+.Outer{
+
+    width: 65%;
+    height: 100%;
+    margin: 20px auto ;
+}

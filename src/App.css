@@ -1,0 +1,39 @@
+* {
+    box-sizing: border-box;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: repeat;
+}
+
+.card-grid-container {
+    width: 80%;
+    display: grid;
+    margin: 0 auto;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    grid-gap: 15px;
+}
+
+
+.btn {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 20px;
+}
+
+.btn button {
+    border-style: none;
+    padding: 5px 10px;
+    margin-right: 10px;
+    border-radius: 5px;
+    background: orange;
+    color: #fff;
+    font-size: 1em;
+    font-weight: 700;
+    font-family: "Comic Sans MS";
+    text-transform: uppercase;
+
+}
+
+.Header{
+    display: inline;
+}
