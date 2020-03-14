@@ -3,6 +3,7 @@ import Axios from 'axios';
 import pokemonTypes from "./pokemonTypes";
 import "./pokedex.css"
 import ProgressBar from "./ProgressBar";
+import { Route } from "react-router-dom";
 
 export default class Pokedex extends Component {
     state = {

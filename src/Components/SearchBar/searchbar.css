@@ -1,39 +1,42 @@
-.Search-container{
-    background-color: white;
-    height: 1.5em;
-    width: 65%;
-    border-radius: 10px;
-    opacity: 0.5;
-    font-size: 1.5em;
-    margin:0 auto;
+.Search-bar {
+    width: 245px;
+    margin: 0 auto;
+    color: hsl(210, 24%, 16%);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
     font-family: "Comic Sans MS";
+    padding-top: 30px;
+}
+.Search-form {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 5px;
 }
 
-.Search-outer{
-    padding-top: 20px;
-    padding-bottom: 20px;
+
+.submitButton {
+    border-radius: 3px;
+    border: none;
+    text-decoration: none;
+    background-color: orange;
+    cursor: pointer;
+    color: #dadad9;
+    font-size: 16px;
 }
-
-.Search-label{
-    text-align: center;
-    position: relative;
-    margin: 0 auto;
-
-}
-
-.Search-container input{
-    width: 50%;
-    font-style: italic;
-    outline: none;
-    box-sizing: border-box;
-    margin: 0 auto;
-
-
-}
-
-.fas fa-search{
-    position: absolute;
-    top: -10px;
+.inputField {
+    background: transparent;
+    border: 0;
+    outline: 0;
+    border-bottom: 2px solid orange;
     color: white;
-    right: 20px;
+    text-align: center;
+    font-weight: 800;
+    font-family: "Comic Sans MS";
+    font-size: 16px;
+}
+
+.submitButton p{
+    font-weight: 800;
+    color: white;
 }

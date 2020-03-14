@@ -53,16 +53,13 @@ const CardList = () => {
 
 
         const loadingPokemon = async (data) => {
-            //local pokemon array take in an array of promises return an array after all promises resolve
             let _pokemonData = await Promise.all(data.map(async pokemon => {
                 let pokemonRecord = await getPokemon(pokemon.url);
                 return pokemonRecord
             }))
-            //store data into react state
             setPokemonData(_pokemonData)
         }
         return(
-            //can only return one container, so have to use a outer to wrap all content
             <div className="Outer-Container">
                 <div className="btn">
                     <button onClick={prev}>Prev</button>

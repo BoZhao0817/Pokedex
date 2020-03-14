@@ -10,7 +10,6 @@ export default class Dashboard extends Component {
                     <CardList/>
                 </div>
 
-
         );
     }
 }
