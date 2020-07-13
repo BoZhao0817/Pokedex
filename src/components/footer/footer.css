@@ -1,0 +1,18 @@
+.footer {
+    margin-top: 100px;
+    padding-bottom: 1rem;
+    display: flex;
+    color: red;
+    background-color: lightcoral;
+    text-align: center;
+}
+
+
+.p{
+    text-align: center;
+}
+
+.i{
+    color: #ce403a;
+    text-align: center;
+}

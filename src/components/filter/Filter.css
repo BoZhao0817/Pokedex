@@ -1,0 +1,60 @@
+.typeList {
+  position: absolute;
+  top: 110px;
+  z-index: 1;
+  background-color: #3466af;
+  border-radius: 5px;
+  /*padding: 7px;*/
+  /*padding-bottom: 7px;*/
+  padding: 15px 7px;
+  width: 200px;
+  align-self: end;
+  margin-left: 90px;
+}
+.typesContainer {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  grid-gap: 4px;
+}
+.typeNames {
+  display: flex;
+  color: #ffcb05;
+  font-family: "Comic Sans MS";
+}
+.filter-btn-container {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 10px;
+}
+.filter-btn {
+  border: none;
+  background: #ffcb05;
+  color: #3466af;
+  width: 70px;
+  border-radius: 6px;
+  height: 26px;
+  transition: all 300ms linear;
+  cursor: pointer;
+  font-family: "Comic Sans MS";
+}
+.filter-btn:hover {
+  background: floralwhite;
+  color: #3466af;
+}
+.typeList:after {
+  content: "";
+  position: absolute;
+  border: 10px solid transparent;
+  left: 84%;
+  border: 10px solid transparent;
+  border-bottom: 10px solid #3466af;
+  bottom: 99%;
+}
+@media only screen and (min-width: 700px) {
+  .typeList {
+    top: 125px;
+  }
+}

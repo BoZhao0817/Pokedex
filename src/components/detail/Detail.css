@@ -1,0 +1,358 @@
+.loadingContainer {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.pokeDetail {
+  background: #F0F0F0;
+  color: lightslategray;
+  font-family: "Comic Sans MS";
+  border-radius: 10px;
+  max-width: 350px;
+  margin: 20px auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  flex-direction: column;
+  box-shadow: 0 15px 35px hsla(0, 0%, 0%, 0.2);
+}
+.pokeDetailName {
+  text-transform: capitalize;
+}
+.pokemonName {
+  display: flex;
+  justify-content: space-evenly;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+.weightContainer {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.types {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.typeContainer {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  justify-content: space-evenly;
+  margin-right: 0;
+}
+.typeContainer div {
+  display: flex;
+  align-items: center;
+  width: 72px;
+  margin-left: 10px;
+  justify-content: center;
+  border-radius: 20px;
+}
+.shiny {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.stats {
+  display: grid;
+  align-content: center;
+  justify-items: center;
+  grid-gap: 20px;
+}
+.pokeStats {
+  padding: 5px;
+}
+.statName {
+  text-transform: capitalize;
+}
+.topBoxWrapper {
+  display: grid;
+  grid-template-rows: repeat(5, auto);
+  grid-gap: 30px;
+  width: 100%;
+}
+.pokePicture {
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  margin-top: 34px;
+}
+.pokeNameContainer {
+  display: grid;
+  align-items: center;
+  grid-template-columns: auto auto;
+  grid-gap: 20px;
+}
+.abilityContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+}
+.pokeAbilities {
+  display: flex;
+  width: 100%;
+  justify-content: space-evenly;
+  margin-top: 30px;
+  flex-wrap: wrap;
+}
+.s-Ability {
+  text-transform: capitalize;
+}
+.callsContainer {
+  font-size: 13px;
+  width: 138px;
+  padding: 10px 0;
+}
+.ability {
+  padding: 10px;
+}
+
+.normal{
+  background-color:#A8A77A;
+
+}
+
+.fire{
+  background-color:#ee8130;
+}
+
+.water{
+  background-color:#6390f0;
+}
+
+.electric{
+  background-color:#f7d02c;
+}
+
+.grass{
+  background-color:#7ac74c;
+}
+
+.ice{
+  background-color:#96d9d6;
+}
+
+.fighting{
+  background-color: #c22e28;
+}
+
+.poison{
+  background-color:#a33ea1;
+}
+
+.ground{
+  background-color:#e2bf65;
+}
+
+.flying{
+  background-color:#a98ff3;
+}
+
+.psychic{
+  background-color:#f95587;
+}
+
+.bug{
+  background-color:#a6b91a;
+}
+
+.rock{
+  background-color: #b6a136;
+}
+
+.ghost{
+  background-color:#735797;
+}
+
+.dragon{
+  background-color:#6f35fc;
+}
+
+.dark{
+  background-color:#705746;
+}
+
+.steel{
+  background-color:#b7b7ce;
+}
+
+.fairy{
+  background-color:#d685ad;
+}
+
+.moveButton {
+  border-radius: 12px;
+  border: none;
+  text-decoration: none;
+}
+.statContainer {
+  width: 255px;
+  background-color:lightslategray;
+  margin: 16px 0;
+  border-radius: 5px;
+}
+.statBar {
+  background-color:lightblue;
+  color: lightslategray;
+  padding-left: 5px;
+  border-radius: 5px 0 0 5px;
+
+}
+.s-Type {
+  color: #040405;
+}
+.p-Types {
+  width: 60px;
+}
+
+@media only screen and (min-width: 900px) {
+  .pokeDetail {
+    margin: 20px auto;
+    display: grid;
+    grid-gap: 20px;
+    max-width: 900px;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .topBoxWrapper {
+    grid-gap: 20px;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    grid-template-rows: repeat(2, 1fr);
+    grid-column: 1 / -1;
+  }
+  .pokePicture {
+    grid-column: 1;
+    grid-row: 1/ -1;
+    margin: 0;
+    -ms-flex-align: center;
+    -webkit-box-align: center;
+    align-items: center;
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    align-items: center;
+    justify-items: center;
+  }
+  .pokePicture img {
+    height: 142px;
+  }
+  .p-Shiny {
+    margin-bottom: 11px;
+  }
+  .stats {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+  .pokeContainer {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding-left: 24px;
+    grid-gap: 16px;
+  }
+  .pokemonName {
+    display: grid;
+    justify-items: center;
+    -ms-flex-align: center;
+    -webkit-box-align: center;
+    align-items: center;
+    grid-template-columns: repeat(2, auto);
+    grid-column: 1;
+    grid-row: 1;
+  }
+  .weightContainer {
+    display: grid;
+    justify-items: center;
+    -ms-flex-align: center;
+    -webkit-box-align: center;
+    align-items: center;
+    grid-template-columns: repeat(2, 1fr);
+    grid-row: 2;
+    grid-column: 3;
+  }
+  .pokeAbilities {
+    display: grid;
+    height: 100%;
+    padding-top: 30px;
+    margin: 0;
+    grid-template-columns: auto auto;
+    grid-gap: 20px;
+  }
+  .abilityContainer {
+    grid-column: 2 / 3;
+    display: grid;
+    grid-template-rows: auto 1fr;
+    align-items: center;
+    justify-items: center;
+    grid-row: 2 / 3;
+    height: 100%;
+    margin: 0;
+  }
+  .ability {
+    padding: 0;
+  }
+  .shiny {
+    display: grid;
+    justify-items: center;
+    -ms-flex-align: center;
+    -webkit-box-align: center;
+    align-items: center;
+    grid-template-rows: repeat(2, 1fr);
+    grid-row: 1 / span 2;
+    grid-column: 2;
+  }
+  .p-Shiny {
+    margin: 0;
+  }
+  .shinySprite img {
+    height: 142px;
+  }
+  .types {
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    grid-template-columns: repeat(2, 1fr);
+    margin-right: 16px;
+  }
+}
+
+.linkContainer{
+  width: 100%;
+  justify-content: space-between;
+  margin-right: 0;
+  text-align: right;
+}
+.prev{
+  margin-top: 5px;
+  background-color: transparent;
+  color: lightslategray;
+  font-family: "Comic Sans MS";
+  font-size: medium;
+  border: none;
+  font-weight: 800;
+}
+
+.next{
+  background-color: transparent;
+  color: lightslategray;
+  font-family: "Comic Sans MS";
+  font-size: medium;
+  border: none;
+  font-weight: 800;
+}

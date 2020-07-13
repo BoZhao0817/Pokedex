@@ -1,0 +1,173 @@
+.moveDesc {
+  width: 123px;
+  height: 130px;
+  font-size: 12px;
+  margin: 0;
+}
+.moveEffect {
+  width: 110px;
+  position: relative;
+  top: 10px;
+}
+.moveCalls {
+  height: 99px;
+  width: 110px;
+}
+.grassDesc {
+  color: #040405;
+  border-radius: 20px;
+  padding-right: 9px;
+  padding-left: 6px;
+  margin-right: 10px;
+  background-color: #7ac74c;
+}
+.poisonDesc {
+  color: #040405;
+  border-radius: 20px;
+  padding-right: 9px;
+  padding-left: 6px;
+  margin-right: 10px;
+  background-color: #a33ea1;
+}
+.fireDesc {
+  color: #040405;
+  border-radius: 20px;
+  padding-right: 9px;
+  padding-left: 6px;
+  margin-right: 10px;
+  background-color: #ee8130;
+}
+.waterDesc {
+  color: #040405;
+  border-radius: 20px;
+  padding-right: 9px;
+  padding-left: 6px;
+  margin-right: 10px;
+  background-color: #6390f0;
+}
+.fightingDesc {
+  color: #040405;
+  border-radius: 20px;
+  padding-right: 9px;
+  padding-left: 6px;
+  margin-right: 10px;
+  background-color: #c22e28;
+}
+.flyingDesc {
+  color: #040405;
+  border-radius: 20px;
+  padding-right: 9px;
+  padding-left: 6px;
+  margin-right: 10px;
+  background-color: #a98ff3;
+}
+.dragonDesc {
+  color: #040405;
+  border-radius: 20px;
+  padding-right: 9px;
+  padding-left: 6px;
+  margin-right: 10px;
+  background-color: #6f35fc;
+}
+.normalDesc {
+  color: #040405;
+  border-radius: 20px;
+  padding-right: 9px;
+  padding-left: 6px;
+  margin-right: 10px;
+  background-color: #A8A77A;
+}
+.fairyDesc {
+  color: #040405;
+  border-radius: 20px;
+  padding-right: 9px;
+  padding-left: 6px;
+  margin-right: 10px;
+  background-color:#d685ad;
+}
+.electricDesc {
+  border-radius: 20px;
+  padding-right: 9px;
+  padding-left: 6px;
+  margin-right: 10px;
+  background-color: #f7d02c;
+}
+.groundDesc {
+  color: #040405;
+  border-radius: 20px;
+  padding-right: 9px;
+  padding-left: 6px;
+  margin-right: 10px;
+  background-color: #e2bf65;
+}
+.fairyDesc {
+  color: #040405;
+  border-radius: 20px;
+  padding-right: 9px;
+  padding-left: 6px;
+  margin-right: 10px;
+  background-color: #ff309b;
+}
+.electricDesc {
+  color: #040405;
+  border-radius: 20px;
+  padding-right: 9px;
+  padding-left: 6px;
+  margin-right: 10px;
+  background-color: #ffe521;
+}
+.iceDesc {
+  border-radius: 20px;
+  padding-right: 9px;
+  padding-left: 6px;
+  margin-right: 10px;
+  background-color: #96d9d6;
+}
+.darkDescDesc {
+  color: #040405;
+  border-radius: 20px;
+  padding-right: 9px;
+  padding-left: 6px;
+  margin-right: 10px;
+  background-color: #705746;
+}
+.steelDesc {
+  color: #040405;
+  border-radius: 20px;
+  padding-right: 9px;
+  padding-left: 6px;
+  margin-right: 10px;
+  background-color: #b7b7ce;
+}
+.bugDesc {
+  color: #040405;
+  border-radius: 20px;
+  padding-right: 9px;
+  padding-left: 6px;
+  margin-right: 10px;
+  background-color: #a6b91a;
+}
+.psychicDesc {
+  color: #040405;
+  border-radius: 20px;
+  padding-right: 9px;
+  padding-left: 6px;
+  margin-right: 10px;
+  background-color: #f95587;
+}
+.rockDesc {
+  color: #040405;
+  border-radius: 20px;
+  padding-right: 9px;
+  padding-left: 6px;
+  margin-right: 10px;
+  background-color: #b6a136;
+}
+.ghostDesc {
+  color: #040405;
+  border-radius: 20px;
+  padding-right: 9px;
+  padding-left: 6px;
+  margin-right: 10px;
+  background-color: #735797;
+}

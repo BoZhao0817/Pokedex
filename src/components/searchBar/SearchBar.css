@@ -1,0 +1,49 @@
+
+.searchBar {
+  width: 245px;
+  margin: 40px auto;
+  color: hsl(210, 24%, 16%);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.searchForm {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 5px;
+  font-family: "Comic Sans MS";
+}
+.submitButton {
+  border-radius: 12px;
+  border: none;
+  text-decoration: none;
+  background-color: #ffcb05;
+  cursor: pointer;
+  color: #3466af;
+  font-size: 16px;
+}
+
+
+.inputField {
+  background: transparent;
+  border: 0;
+  outline: 0;
+  border-bottom: 2px solid #ffcb05;
+  color: #3466af;
+  font-family: "Comic Sans MS";
+  font-weight: 800;
+  font-size: medium;
+}
+.filterButton {
+  border-radius: 12px;
+  border: none;
+  text-decoration: none;
+  background-color: #ffcb05;
+  cursor: pointer;
+  color: #3466af;
+  font-family: "Comic Sans MS";
+  font-weight: 800;
+  font-size: medium;
+}
+
+

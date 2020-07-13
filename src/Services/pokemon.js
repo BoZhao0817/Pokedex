@@ -22,3 +22,25 @@ export async function getPokemon(url){
 
     })
 }
+
+//this function get pokemon filter list
+export async function getFilterPokemon(url){
+    return new Promise((resolve, reject) =>{
+        fetch(url)
+            .then(res => res.json())
+            .then(data => {
+                resolve(data)
+            })
+    })
+}
+
+//this function get a single pokemon (index)
+export async function getSinglePokemon(url){
+    return new Promise((resolve, reject) => {
+        fetch(url)
+            .then(res => res.json())
+            .then(data => {
+                resolve(data)
+            })
+    })
+}
